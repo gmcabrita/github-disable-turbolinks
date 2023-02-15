@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Disable Turbolinks",
+  "description": "Disables Turbolinks on GitHub, that's it.",
+  "version": "1.0.0",
+  "content_scripts": [
+      {
+        "js": [
+          "no-turbolinks.js"
+        ],
+        "matches": [
+          "https://github.com/*",
+          "https://gist.github.com/*"
+        ]
+      }
+    ]
+}
